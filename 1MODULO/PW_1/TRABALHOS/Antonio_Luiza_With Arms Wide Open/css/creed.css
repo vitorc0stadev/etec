@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: rgb(248, 247, 247);
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 150px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+}
+
+.logo-banda {
+  width: 120px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+}
+
+.musica-tema {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.musica-tema a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.inicio-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 40px;
+  align-items: start;
+  padding: 30px 70px;
+}
+
+.foto-musica {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 250px;
+  margin: 0;
+  grid-column: 2;
+}
+
+.foto-musica img {
+  display: block;
+  width: 150%;
+  height: 500px;
+}
+
+.foto-musica figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(58, 58, 58);
+}
+
+.foto-musica figcaption a {
+  color: rgb(146, 128, 48);
+  text-decoration: none;
+}
+
+.texto-inicial {
+  min-width: 0;
+  grid-column: 1;
+}
+
+.texto-inicial h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 300%;
+}
+
+.texto-inicial p {
+  line-height: 1.6;
+  font-size: 120%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inicio {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#inicio h2 {
+  font-weight: 300;
+  margin-bottom: 150px;
+  font-size: 300%;
+  font-family: "Cormorant Garamond", serif;
+}
+
+#inicio h2::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background-color: #777;
+  margin: 25px auto 0;
+}
+
+#sobre {
+  text-align: center;
+  background-color: rgb(248, 247, 247);
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 150px;
+}
+
+#sobre h2 {
+  font-size: 200%;
+}
+
+#sobre h3 {
+  color: rgb(77, 77, 77);
+  margin-bottom: 50px;
+}
+
+.secao {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topico h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 60px;
+  margin: 0 0 20px;
+
+  background-color: rgb(236, 236, 236);
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+
+  text-align: center;
+  font-weight: 500;
+}
+
+.topico figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.topico figure img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.topico figcaption {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.topico figcaption a {
+  color: rgb(146, 128, 48);
+  text-decoration: none;
+}
+
+.topico p {
+  line-height: 1.7;
+  margin-top: 0;
+  text-align: justify;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .secao-sobre {
+    grid-template-columns: 1fr;
+  }
+}
+
+#scott-stapp {
+  text-align: center;
+  background-color: rgb(248, 247, 247);
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 150px;
+}
+
+#scott-stapp h2 {
+  font-size: 200%;
+}
+
+#scott-stapp h3 {
+  color: rgb(77, 77, 77);
+  margin-bottom: 50px;
+}
+
+#creed {
+  text-align: center;
+  background-color: rgb(248, 247, 247);
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 200px;
+}
+
+#creed h2 {
+  font-size: 200%;
+}
+
+#creed h3 {
+  color: rgb(77, 77, 77);
+  margin-bottom: 50px;
+}
+
+#creed .topico img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+#creed .topico img:hover {
+  filter: grayscale(0%);
+}
+
+#creed .topico p {
+  line-height: 1.7;
+  margin-top: 0;
+  text-align: justify;
+}
+
+#audiovisual {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#audiovisual h2 {
+  align-self: center;
+  font-size: 200%;
+  margin-bottom: 50px;
+}
+
+.video {
+  align-self: center;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: rgb(41, 41, 41);
+  border-top: 1px solid #1f1f1f;
+}
+
+.etec-ads {
+  text-align: center;
+}
+
+.etec-ads h2 {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.etec-ads h2 a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.719);
+}
+
+.etec-ads h3 {
+  font-size: 13px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.etec-ads h3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-cps {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.informacoes-finais {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+
+  text-align: center;
+  list-style: none;
+  padding: 25px;
+  margin: 30px;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.informacoes-finais div {
+  border: 1px solid rgb(85, 85, 85);
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgb(26, 26, 26);
+  transition: transform 0.3s ease;
+}
+
+.informacoes-finais div:hover {
+  transform: scale(1.05);
+}
+
+.informacoes-finais h4 {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.direitos {
+  text-align: center;
+  color: white;
+}
+
+footer .logo-container {
+  border-top: 1px solid rgb(87, 87, 87);
+}

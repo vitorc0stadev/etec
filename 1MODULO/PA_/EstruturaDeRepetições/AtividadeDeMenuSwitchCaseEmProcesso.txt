@@ -1,0 +1,68 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int num1=0;
+    int num2=0;
+    int num3=0;
+    int opcao=0;
+    int maior;
+    int meio;
+    int menor;
+    bool numerosDigitados = false;
+    
+    do{
+        cout<< "MENU DE DIGITAÇÃO DO ANTÔNIO - BEM VINDO!" << endl;
+        cout<<"1 - Digitação de três números" << endl;
+        cout<<"2 - Somar os três números"<<endl;
+        cout<<"3 - Subtrair o maior número pelo menor número"<<endl;
+        cout<<"4 - Subtrair o maior número da soma dos dois menores"<<endl;
+        cout<<"5 - Exibir a potência elevada ao quadrado de cada um dos tres números"<<endl;   
+        cout<<"6 - Exibir os números entre o maior e o menor digitados"<<endl; 
+        cout<<"7 - Exibir os números entre o maior e o do meio saltando de tanto em tanto que é o menor digitado"<<endl; 
+        cout<<"8 - Finalizar sessão"<<endl; 
+        cin>>opcao; 
+        
+        
+        switch(opcao){
+             case 1: 
+                cout<<"Digite o primeiro número..:";
+                cin>>num1;
+                cout<<"Digite o segundo número..:";
+                cin>>num2;
+                cout<<"Digite o terceiro número..:";
+                cin>>num3;
+                
+                if (numerosDigitados =true)
+                   cout << "Números digitados sucesso!" << endl;
+                
+                break;
+                
+             case 2: 
+                cout<<"A soma entre: "<< num1 << " + " << num2 << " + " << num3 << " = " << num1+num2+num3 <<endl;
+                break;
+                
+             case 3: 
+               if (menor=0 && maior>=0){
+                
+                cout<<"A subtração entre os números: " << num1 - num2 << endl;
+                break;
+               }
+               
+                
+        }
+        
+    }while(opcao!=8);
+    
+    return 0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3 - Formulário Básico de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Cabeçalho do formulário -->
+        <div class="form-header">
+            <h1>Cadastro de Usuário</h1>
+            <p>Preencha os campos abaixo para criar sua conta no sistema acadêmico.</p>
+        </div>
+
+        <!-- Elemento form encapsulando os controles de entrada -->
+        <form action="#" method="POST" class="form-basico">
+            
+            <!-- Grupo de campo para Nome -->
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <!-- Input do tipo texto com preenchimento obrigatório (required) e texto explicativo (placeholder) -->
+                <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required>
+            </div>
+
+            <!-- Grupo de campo para E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail Institucional</label>
+                <!-- Input do tipo email, validando nativamente o formato do endereço -->
+                <input type="email" id="email" name="email" placeholder="seu.nome@escola.br" required>
+            </div>
+
+            <!-- Grupo de campo para Telefone -->
+            <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <!-- Input do tipo tel para dispositivos móveis exibirem o teclado numérico adequado -->
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" required>
+            </div>
+
+            <!-- Grupo de campo para Senha -->
+            <div class="form-group">
+                <label for="senha">Senha de Acesso</label>
+                <!-- Input do tipo password ocultando os caracteres digitados -->
+                <input type="password" id="senha" name="senha" placeholder="Mínimo de 6 caracteres" minlength="6" required>
+            </div>
+
+            <!-- Botão de submissão do formulário -->
+            <button type="submit" class="btn-submit">Cadastrar</button>
+
+        </form>
+    </main>
+
+</body>
+</html>

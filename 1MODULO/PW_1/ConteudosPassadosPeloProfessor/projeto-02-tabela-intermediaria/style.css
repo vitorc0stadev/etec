@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 1rem;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+/* Classe para garantir responsividade por meio de rolagem horizontal em viewports reduzidas */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.tabela-intermediaria {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tabela-intermediaria th,
+.tabela-intermediaria td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabela-intermediaria thead th {
+    background-color: #334155;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #1e293b;
+}
+
+/* Utilitários de alinhamento de texto */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Estilização de listras alternadas nas linhas para melhorar a legibilidade (zebra striping) */
+.tabela-intermediaria tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Efeito de hover nas linhas do corpo */
+.tabela-intermediaria tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Destaque condicional para linhas que exigem atenção */
+.destaque-alerta {
+    background-color: #fff1f2 !important;
+}
+
+.destaque-alerta:hover {
+    background-color: #ffe4e6 !important;
+}
+
+/* Estilização do rodapé da tabela */
+.tabela-intermediaria tfoot {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Distintivos (badges) visuais de status */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge.disponivel {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.badge.critico {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}

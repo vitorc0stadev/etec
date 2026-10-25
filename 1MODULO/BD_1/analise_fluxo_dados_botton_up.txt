@@ -1,0 +1,38 @@
+Substantivos presentes no texto:
+
+
+ponto (dt_ponto, hr_ponto)
+funcionario (cd_matricula, nm_funcionario)
+ocorrencia (nm_ocorrencia, ic_justificada)
+departamento (cd_departamento, nm_departamento)
+
+
+
+Exercicio 1 de botton up, analise do texto:
+
+funcionário (id_funcionario, nm_funcionario)
+departamento (cd_departamento, nm_departamento)
+dependente (nm_dependente, id_dependente)
+organização (nm_organização, ds_patrimonio_organizacao)  
+patrimônio (vl_patrimonio, qt_bem_patrimonio)
+
+Exercicio 1 de botton up, analise do texto: VERSÃO CORRIGIDA
+
+funcionario (id_matricula, nm_funcionario)
+departamento (cd_departamento, nm_departamento 
+dependente (cd_dependente, nm_dependente)
+contrato (cd_contrato, dt_contrato)
+patrimonio (cd_patrimonio, ds_patrimonio, vl_patrimonio)
+
+Exercicio 2 de botton up, analise do texto:
+
+publicacao (cd_publicação, dt_publicação)
+assinatura (qt_assinatura_, vl_assinatura, nm_assinante)
+assinante (nm_assinante, id_assinante)
+
+Exercicio 2 de botton up, analise do texto: VERSÃO CORRIGIDA
+
+publicacao (cd_publicação, nm_publicacao)
+assinatura (qt_assinatura_, vl_assinatura, dt_assinatura)
+assinante (nm_assinante, id_assinante)
+

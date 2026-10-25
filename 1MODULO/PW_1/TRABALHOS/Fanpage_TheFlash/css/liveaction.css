@@ -1,0 +1,75 @@
+#liveaction {
+  max-width: 1300px;
+  margin: 50px auto;
+  margin-bottom: 200px;
+}
+
+#liveaction > h2 {
+  font-family: "Bangers", cursive;
+  font-size: 42px;
+  text-align: center;
+  color: #ffd700;
+  text-shadow: 3px 3px 0 #8b0000;
+  margin: 0 0 15px;
+}
+
+#liveaction > h3 {
+  font-family: "Bangers", cursive;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffd700;
+  text-shadow: 3px 3px 0 #8b0000;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.atores-flash {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+.ator-secao {
+  min-width: 0;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  border: 2px solid #8b0000;
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.ator-secao:hover {
+  transform: translateY(-5px);
+  border-color: #ffd700;
+}
+
+.ator-secao h4 {
+  font-family: "Bangers", cursive;
+  font-size: 27px;
+  text-align: center;
+  color: #ffd700;
+  text-shadow: 2px 2px 0 #8b0000;
+  margin: 0 0 20px;
+}
+
+.ator-secao img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+}
+
+.ator-secao p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+  overflow-wrap: anywhere;
+}

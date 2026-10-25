@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 2 - Controle de Estoque e Relatório</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Controle de Estoque - Almoxarifado TI</h1>
+        <p>Relatório gerencial avançado utilizando agrupamento semântico, mesclagem de células e indicadores de status.</p>
+
+        <!-- Contêiner responsivo para rolagem horizontal em telas pequenas -->
+        <div class="table-responsive">
+            <table class="tabela-intermediaria">
+                <!-- Cabeçalho semântico da tabela -->
+                <thead>
+                    <tr>
+                        <th rowspan="2">Código</th>
+                        <th rowspan="2">Descrição do Item</th>
+                        <th rowspan="2">Categoria</th>
+                        <th colspan="2" class="text-center">Quantidade</th>
+                        <th rowspan="2">Status</th>
+                    </tr>
+                    <tr>
+                        <th>Mínimo</th>
+                        <th>Atual</th>
+                    </tr>
+                </thead>
+
+                <!-- Corpo da tabela contendo os registros de estoque -->
+                <tbody>
+                    <tr>
+                        <td>PRD-101</td>
+                        <td>SSD NVMe 500GB</td>
+                        <td>Armazenamento</td>
+                        <td>5</td>
+                        <td>12</td>
+                        <td><span class="badge disponivel">Disponível</span></td>
+                    </tr>
+                    <tr class="destaque-alerta">
+                        <td>PRD-102</td>
+                        <td>Memória RAM 16GB DDR4</td>
+                        <td>Componentes</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td><span class="badge critico">Crítico</span></td>
+                    </tr>
+                    <tr>
+                        <td>PRD-103</td>
+                        <td>Teclado Mecânico RGB</td>
+                        <td>Periféricos</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td><span class="badge disponivel">Disponível</span></td>
+                    </tr>
+                    <tr>
+                        <td>PRD-104</td>
+                        <td>Monitor LED 24" Full HD</td>
+                        <td>Vídeo</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td><span class="badge disponivel">Disponível</span></td>
+                    </tr>
+                </tbody>
+
+                <!-- Rodapé semântico da tabela para sumários ou totais -->
+                <tfoot>
+                    <tr>
+                        <!-- Utiliza colspan para mesclar colunas e alinhar o texto do rodapé -->
+                        <td colspan="3">Total de Itens Cadastrados:</td>
+                        <td colspan="3" class="text-right"><strong>4 Produtos</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>

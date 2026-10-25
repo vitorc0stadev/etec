@@ -1,0 +1,123 @@
+top-down e suas representações
+
++ -> e
+() -> opcional
+[/] -> ou
+</> -> e / ou
+{} -> Multipla ocorrencia
+
+nota_fiscal =
+
+cd_nota_fiscal
++dt_nota_fiscal
++nm_cliente
+(+cd_inscriacao_estadual_cliente)
+[+cd_cnpj_cliente /
+cd_cpf_cliente]
+{+qt_material
++nm_material
++vl_unitario_material
++vl_total_material}
++vl_total_nota_fiscal
+
+
+
+Exercicio pra treinar 1
+
+cadastro_funcionario =
+
+cd_matricula_funcionario
++nm_funcionario
++dt_nascimento_funcionario
++ds_nacionalidade_funcionario
++ds_sexo_funcionario
++ic_estado_civil_funcionario
+[+cd_rg_funcionario /
++cd_cpf_funcionario]
++ds_endereco_funcionario
++id_telefone_funcionario
++dt_admissao_funcionario
+{+ds_cargo_ocupado_funcionario
++ds_cargo_auxiliar_escritorio
++dt_inicio_cargo
++dt_fim_cargo
++ds_cargo_contador
++dt_inicio_cargo
++dt_fim_cargo}
+{+ds_departamento_lotaçao
++ds_depto_faturamento
++dt_inicio
++dt_fim
++ds_depto_contabilidade
++dt_inicio
++dt_fim}
++ds_dependente_funcionario
+
+
+versao corrigida dessa parte acima
+
+cadastro_funcionario =
+
+id_matricula_funcinario
++nm_funcionario
++dt_nascimento_funcionario
++nm_nacionalidade_funcionario
++ic_sexo_funcionario
++nm_estado_civil_funcionario
++id_rg_funcionario
++id_cpf_funcionario
++ds_endereco_funcionario
++cd_telefone_funcionario
++dt_admissao_funcionario
++nm_cargo1
++dt_inicio_cargo1
++dt_fim_cargo1
++nm_cargo2
++dt_inicio_cargo2
++dt_fim_cargo2
++nm_depto1
++dt_inicio_depto1
++dt_fim_depto1
++nm_depto2
++dt_inicio_depto2
++dt_fim_depto2
+(+nm_dependente)
+(+dt_nascimento_dependente)
+
+
+Exercicio pra treinar 2
+
+hollerith_funcionario =
+
+id_matricula_funcionario
++nm_funcionario
++dt_admissao_funcionario
++nm_departamento_funcionario
++vl_salario_base
++pc_total_desconto
++vl_salario_liquido
++dt_pagamento_funcionario
+
+versao corrigida dessa parte acima
+
+hollerith=
+
+id_matricula_funcionario
++dt_admissao_funcionario
++nm_funcionario
++ds_departamento
++vl_salario_base_funcionario
++vl_total_desconto_salario
++vl_salario_liquido_funcionario
++dt_pagamento_funcionario
+
+
+
+
+
+
+
+
+ 
+
+

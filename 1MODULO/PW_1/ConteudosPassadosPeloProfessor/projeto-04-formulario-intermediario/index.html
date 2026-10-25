@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 4 - Cadastro Completo de Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="form-header">
+            <h1>Ficha de Inscrição Acadêmica</h1>
+            <p>Preencha todas as seções obrigatórias para efetivar o cadastro no curso técnico.</p>
+        </div>
+
+        <form action="#" method="POST" class="form-intermediario">
+            
+            <!-- Grupo Visual 1: Dados Pessoais -->
+            <fieldset class="form-fieldset">
+                <legend>1. Informações Pessoais</legend>
+
+                <div class="form-group">
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" id="nome-completo" name="nome_completo" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="email-aluno">E-mail Pessoal ou Institucional</label>
+                        <input type="email" id="email-aluno" name="email_aluno" placeholder="usuario@email.com" required>
+                    </div>
+
+                    <div class="form-group half">
+                        <label for="data-nasc">Data de Nascimento</label>
+                        <input type="date" id="data-nasc" name="data_nascimento" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Grupo Visual 2: Dados Acadêmicos e Curso -->
+            <fieldset class="form-fieldset">
+                <legend>2. Dados do Curso</legend>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="curso">Curso Desejado</label>
+                        <!-- Elemento de seleção suspensa (select) -->
+                        <select id="curso" name="curso" required>
+                            <option value="" disabled selected>Selecione um curso...</option>
+                            <option value="ds">Técnico em Desenvolvimento de Sistemas</option>
+                            <option value="ti">Técnico em Informática para Internet</option>
+                            <option value="adm">Técnico em Administração</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group half">
+                        <label for="turno">Turno Preferencial</label>
+                        <select id="turno" name="turno" required>
+                            <option value="" disabled selected>Selecione o turno...</option>
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Grupo de opções de rádio (radio buttons) para seleção única -->
+                <div class="form-group">
+                    <label>Experiência Prévia em Programação:</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="experiencia" value="nenhuma" checked> Nenhuma
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="experiencia" value="basica"> Básica (Lógica / HTML)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="experiencia" value="intermediaria"> Intermediária / Avançada
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Grupo Visual 3: Observações e Termos -->
+            <fieldset class="form-fieldset">
+                <legend>3. Informações Adicionais</legend>
+
+                <div class="form-group">
+                    <label for="observacoes">Observações ou Necessidades Especiais</label>
+                    <!-- Área de texto multilinha (textarea) -->
+                    <textarea id="observacoes" name="observacoes" rows="4" placeholder="Descreva brevemente suas expectativas ou necessidades de acessibilidade..."></textarea>
+                </div>
+
+                <!-- Caixa de seleção (checkbox) para aceite de termos -->
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="termos" required> Declaro estar de acordo com os termos de matrícula e política institucional.
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Botões de Ação -->
+            <div class="form-actions">
+                <button type="reset" class="btn-secondary">Limpar Campos</button>
+                <button type="submit" class="btn-primary">Finalizar Inscrição</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

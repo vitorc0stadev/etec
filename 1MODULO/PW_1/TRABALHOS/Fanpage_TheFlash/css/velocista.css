@@ -1,0 +1,168 @@
+/* TUDO O QUE ESTÁ NO HEADER E NO FOOTER */
+
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-image: url("../img/header/Fundo_Site.png");
+}
+
+header {
+  background-image: url("../img/header/Fundo\ Carmesim\ de\ Raios\ e\ Velocidade.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  height: 1400px;
+  margin-bottom: 10%;
+}
+
+nav {
+  background: linear-gradient(to right, #5c0000, #a80000, #ff1a1a);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: sticky;
+}
+
+nav img {
+  height: 100px;
+}
+
+.lista {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin-left: 800px;
+  padding: 0;
+}
+
+.lista a {
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  background: linear-gradient(to right, #8a6d00, #ffd700, #fff4a3);
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  padding: 4px 2px;
+}
+
+.imagens-header {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+}
+
+.flash-h {
+  width: 880px;
+  height: auto;
+}
+
+.logo-flash {
+  width: 650px;
+  height: auto;
+}
+
+footer {
+  background: linear-gradient(to right, #5c0000, #a80000, #ff1a1a);
+}
+
+.etec-ads {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.etec-ads h2 {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.etec-ads h2 a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.719);
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.etec-ads h3 {
+  font-size: 13px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.etec-ads h3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-cps {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.informacoes-finais {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  text-align: center;
+  list-style: none;
+  padding: 25px;
+  margin: 30px;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.informacoes-finais div {
+  border: 1px solid rgb(255, 0, 0);
+  padding: 20px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #a59b0f, #b3a709, #eeff00);
+  transition: transform 0.3s ease;
+}
+
+.informacoes-finais div:hover {
+  transform: scale(1.05);
+}
+
+.informacoes-finais h4 {
+  font-size: 30px;
+  font-family: "Bangers", cursive;
+  color: #8b0000;
+  text-shadow: 3px 3px 0 #ffd700;
+}
+
+.informacoes-finais {
+  font-family: "Roboto", sans-serif;
+}
+
+.fonte {
+  list-style: none;
+}
+
+.fonte a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.direitos {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.direitos img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
